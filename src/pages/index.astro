@@ -1,6 +1,7 @@
 ---
 import Navbar from "../components/Navbar.astro";
 import About from "../components/About.astro";
+import Skills from "../components/Skills.astro";
 ---
 
 <html lang="en">
@@ -16,6 +17,7 @@ import About from "../components/About.astro";
 		<header><Navbar /></header>
 		<main>
 			<About />
+			<Skills />
 		</main>
 	</body>
 </html>
@@ -35,25 +37,6 @@ import About from "../components/About.astro";
 		flex-direction: column;
 		align-items: center;
 		gap: 100px;
-	}
-
-	
-
-	.skills {
-		display: flex;
-		flex-direction: column;
-		gap: 50px;
-		width: 100%;
-		align-items: center;
-		border-bottom: 1px solid rgb(30, 30, 30, 0.3);
-		padding: 0px 20px 100px 20px;
-	}
-
-	.skills > section {
-		display: flex;
-		gap: 40px;
-		flex-wrap: wrap;
-		justify-content: center;
 	}
 
 	.work {
