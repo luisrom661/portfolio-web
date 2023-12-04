@@ -2,80 +2,87 @@
 import Navbar from "../components/Navbar.astro";
 import About from "../components/About.astro";
 import Skills from "../components/Skills.astro";
+import Layout from "../layouts/Layout.astro";
+import Projects from '../components/Projects.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name='description' content="Portfolio Web de Luis Romero"/>
-		<title>Luis Romero | Portfolio</title>
-	</head>
-	<body>
-		<header><Navbar /></header>
-		<main>
-			<About />
-			<Skills />
-		</main>
-	</body>
-</html>
+<Layout title="Luis Romero | Portfolio">
+  <body>
+    <header><Navbar /></header>
+    <main>
+      <About />
+      <Skills />
+      <Projects/>
+    </main>
+  </body>
+</Layout>
 
 <style>
-	* {
-		margin: 0;
-		padding: 0;
-		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		box-sizing: border-box;
-	}
+  * {
+    margin: 0;
+    padding: 0;
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+    box-sizing: border-box;
+  }
 
-	main {
-		margin: 50px auto 0 auto;
-		max-width: 1020px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 100px;
-	}
+  main {
+    margin: 50px auto 0 auto;
+    max-width: 1020px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
 
-	.work {
-		display: flex;
-		flex-direction: column;
-		gap: 50px;
-		width: 100%;
-		align-items: center;
-		border-bottom: 1px solid rgb(30, 30, 30, 0.3);
-		padding: 0px 20px 100px 20px;
-	}
-	
-	.work > section {
-		display: flex;
-		gap: 40px;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
+  .work {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid rgb(30, 30, 30, 0.3);
+    padding: 0px 20px 100px 20px;
+  }
 
-	.contact {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 50px;
-		width: 100%;
-		padding: 0px 20px 100px 20px;
-	}
+  .work > section {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-	@media screen and (max-width: 700px) {
-		main {
-			margin: 0 auto;
-		}
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    padding: 0px 20px 100px 20px;
+  }
 
-		.about {
-			height: 80vh;
-		}
+  @media screen and (max-width: 700px) {
+    main {
+      margin: 0 auto;
+    }
 
-		.about > img {
-			width: 100px;
-		}
-	}
+    .about {
+      height: 80vh;
+    }
+
+    .about > img {
+      width: 100px;
+    }
+  }
 </style>
+

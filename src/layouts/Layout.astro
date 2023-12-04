@@ -1,0 +1,32 @@
+---
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+import "../assets/style.css";
+import { ViewTransitions } from "astro:transitions";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name='description' content="Portfolio Web de Luis Romero"/>
+    <!-- BoxIcons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <slot />
+    <script src="../assets/index.js"></script>
+  </body>
+</html>
