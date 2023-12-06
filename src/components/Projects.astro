@@ -4,13 +4,10 @@ import ProjectCard from "./ProjectCard.astro";
 import Title from "../components/Title.astro";
 ---
 
-<section class="projects">
-  <Title text="Proyectos" />
-</div>
-<div>
-  <p>Estos son las proyectos que he realizado para mis proyectos personales.</p>
-</div>
-<div class="project-cards">
+<Title text="Proyectos" />
+<div
+  class="grid mx-auto gap-6 mb-8 xl:grid-cols-3 xl:w-4/5 lg:grid-cols-3 md:w-[85%] md:grid-cols-2 xs:grid-cols-1 xs:w-[90%]"
+>
   {
     projects.map((card) => (
       <ProjectCard
@@ -20,27 +17,4 @@ import Title from "../components/Title.astro";
       />
     ))
   }
-</section>
-
-<style>
-  .projects {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    width: 100%;
-    align-items: center;
-    border-bottom: 1px solid rgb(30, 30, 30, 0.3);
-    padding: 0px 20px 100px 20px;
-  }
-
-  .projects > div {
-    text-align: center;
-  }
-
-  .project-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-</style>
+</div>
