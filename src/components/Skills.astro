@@ -1,5 +1,15 @@
 ---
 import Title from "../components/Title.astro";
+import Modal from "../components/Modal.astro";
+import { useState } from 'astro/hooks';
+
+let [isOpen, setIsOpen] = useState(false);
+function openModal() {
+  setIsOpen(true);
+}
+function closeModal() {
+  setIsOpen(false);
+}
 ---
 
 <section class="skills">
@@ -8,69 +18,42 @@ import Title from "../components/Title.astro";
     <article class="skill-card">
       <img src="/icons8-devops-60.png" alt="card icon" />
       <h3>DevOps</h3>
-      <p>Automating processes with Python and its different libraries</p>
+      <p>Conocimientos intermedios donde automatizo, gestiono, y superviso sistemas y operaciones de software.</p>
+      <a
+        class="parent-container scroll-mt-48 hover:scale-[105%] transition-all duration-300 ease-in relative border-white/80 bg-cover bg-center h-[30px] cursor-pointer"
+        href="/devops"
+        transition:name={`image-devops`}
+      >
+        <button class="btnTech"> Ver más</button>
+      </a>
     </article>
     <article class="skill-card">
       <img src="/icons8-backend-60.png" alt="card icon" />
       <h3>Desarrollo Backend</h3>
       <p>
-        Databases like PostgreSQL and MongoDB. Developing APIs with JavaScript
-        and Python
+        Conocimientos intermedios donde desarrollo, mantengo, y optimizo servidores y bases de datos.
       </p>
+      <a
+        class="parent-container scroll-mt-48 hover:scale-[105%] transition-all duration-300 ease-in relative border-white/80 bg-cover bg-center h-[30px] cursor-pointer"
+        href="/devops"
+        transition:name={`image-devops`}
+      >
+        <button class="btnTech"> Ver más</button>
+      </a>
     </article>
     <article class="skill-card">
       <img src="/icons8-web-design-60.png" alt="card icon" />
       <h3>Desarrollo Frontend</h3>
       <p>
-        Developing websites with JavaScript and the best Frameworks like React,
-        Vue, and Astro
+        Conocimientos básicos donde diseño, construyo, y pruebo interfaces de usuario.
       </p>
+      <a
+        class="parent-container scroll-mt-48 hover:scale-[105%] transition-all duration-300 ease-in relative border-white/80 bg-cover bg-center h-[30px] cursor-pointer"
+        href="/devops"
+        transition:name={`image-devops`}
+      >
+        <button class="btnTech"> Ver más</button>
+      </a>
     </article>
   </section>
 </section>
-
-<style>
-  .skills {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    width: 100%;
-    align-items: center;
-    border-bottom: 1px solid rgb(30, 30, 30, 0.3);
-    padding: 0px 20px 100px 20px;
-  }
-
-  .skills > section {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .skill-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 260px;
-    min-height: 210px;
-    background-color: #1e1e1e;
-    border-radius: 10px;
-    color: #fff;
-    padding: 20px;
-  }
-
-  .skill-card > img {
-    text-align: center;
-    width: 50px;
-  }
-
-  .skill-card > h3 {
-    font-size: 20px;
-    font-weight: 400;
-  }
-  .skill-card > p {
-    font-weight: 100;
-    font-size: 14px;
-  }
-</style>

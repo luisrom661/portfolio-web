@@ -12,3 +12,76 @@
     opacity: 1;
     transition: opacity ease-in 300ms;
 }
+
+/*=============== Button Tech Cards ===============*/
+.btnTech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 90px;
+    height: 35px;
+    background-color: #454545;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btnTech>span {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.btnTech>img {
+    width: 24px;
+}
+
+/*=============== Skills & Skills Cards ===============*/
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid rgb(30, 30, 30, 0.3);
+    padding: 0px 20px 100px 20px;
+}
+
+.skills>section {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 260px;
+    min-height: 240px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+}
+
+.skill-card>img {
+    text-align: center;
+    width: 50px;
+}
+
+.skill-card>h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.skill-card>p {
+    font-weight: 100;
+    font-size: 14px;
+}
