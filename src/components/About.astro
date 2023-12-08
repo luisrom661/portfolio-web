@@ -9,11 +9,23 @@ import Button from "../components/Button.astro";
     <p>¡Hola!, Soy Luis Romero</p>
     <Title text="Desarrollador de software" />
   </article>
-  <Button
-    message="Mira mi CV"
-    icon="/icons8-cv-24.png"
-    link="https://drive.google.com/file/d/1ctaeAbDzg4Qpa5USJB7gQkk9dtxy8lA-/view?usp=drive_link"
-  />
+  
+  <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+    <div class="space-x-1 flex text-sm font-medium">
+      
+      <Button
+        message="Mira mi CV (ES)"
+        icon="/icons8-cv-24.png"
+        link="https://drive.google.com/file/d/1ctaeAbDzg4Qpa5USJB7gQkk9dtxy8lA-/view?usp=drive_link"
+        target="_blank"
+      />
+      <Button
+        message="Mira mi CV (EN)"
+        icon="/icons8-cv-24.png"
+        link="https://drive.google.com/file/d/1ctaeAbDzg4Qpa5USJB7gQkk9dtxy8lA-/view?usp=drive_link"
+      />
+    </div>
+  </div>
 </section>
 
 <style>

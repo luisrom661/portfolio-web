@@ -1,8 +1,8 @@
 ---
-const { message, icon, link } = Astro.props;
+const { message, icon, link,target } = Astro.props;
 ---
 
-<a class="link-btn" href={link} target="_blank">
+<a class="link-btn" href={link} target={target}>
   <button class="btn">
     <span>{message}</span>
     <img src={icon} alt="button icon" />
