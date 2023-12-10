@@ -85,3 +85,72 @@
     font-weight: 100;
     font-size: 14px;
 }
+
+/* Estilos para el modal */
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 400ms ease-in;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog>div {
+    width: 50%;
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.modalDialog h2 {
+    margin-bottom: 20px;
+}
+
+.modalDialog p {
+    margin-bottom: 10px;
+}
+
+.close {
+    background: #606061;
+    color: #ffffff;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #000;
+}
+
+.close:hover {
+    background: #496064;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.badges img {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}

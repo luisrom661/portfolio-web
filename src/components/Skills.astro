@@ -1,15 +1,6 @@
 ---
 import Title from "../components/Title.astro";
 import Modal from "../components/Modal.astro";
-import { useState } from 'astro/hooks';
-
-let [isOpen, setIsOpen] = useState(false);
-function openModal() {
-  setIsOpen(true);
-}
-function closeModal() {
-  setIsOpen(false);
-}
 ---
 
 <section class="skills">
@@ -18,10 +9,13 @@ function closeModal() {
     <article class="skill-card">
       <img src="/icons8-devops-60.png" alt="card icon" />
       <h3>DevOps</h3>
-      <p>Conocimientos intermedios donde automatizo, gestiono, y superviso sistemas y operaciones de software.</p>
+      <p>
+        Conocimientos intermedios donde automatizo, gestiono, y superviso
+        sistemas y operaciones de software.
+      </p>
       <a
         class="parent-container scroll-mt-48 hover:scale-[105%] transition-all duration-300 ease-in relative border-white/80 bg-cover bg-center h-[30px] cursor-pointer"
-        href="/devops"
+        href="#openModalDevops"
         transition:name={`image-devops`}
       >
         <button class="btnTech"> Ver más</button>
@@ -31,11 +25,12 @@ function closeModal() {
       <img src="/icons8-backend-60.png" alt="card icon" />
       <h3>Desarrollo Backend</h3>
       <p>
-        Conocimientos intermedios donde desarrollo, mantengo, y optimizo servidores y bases de datos.
+        Conocimientos intermedios donde desarrollo, mantengo, y optimizo
+        servidores y bases de datos.
       </p>
       <a
         class="parent-container scroll-mt-48 hover:scale-[105%] transition-all duration-300 ease-in relative border-white/80 bg-cover bg-center h-[30px] cursor-pointer"
-        href="/devops"
+        href="#openModalBackend"
         transition:name={`image-devops`}
       >
         <button class="btnTech"> Ver más</button>
@@ -45,11 +40,12 @@ function closeModal() {
       <img src="/icons8-web-design-60.png" alt="card icon" />
       <h3>Desarrollo Frontend</h3>
       <p>
-        Conocimientos básicos donde diseño, construyo, y pruebo interfaces de usuario.
+        Conocimientos básicos donde diseño, construyo, y pruebo interfaces de
+        usuario.
       </p>
       <a
         class="parent-container scroll-mt-48 hover:scale-[105%] transition-all duration-300 ease-in relative border-white/80 bg-cover bg-center h-[30px] cursor-pointer"
-        href="/devops"
+        href="#openModalFrontend"
         transition:name={`image-devops`}
       >
         <button class="btnTech"> Ver más</button>
@@ -57,3 +53,163 @@ function closeModal() {
     </article>
   </section>
 </section>
+
+<div id="openModalDevops" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <h2>Tecnologías DevOps</h2>
+    <p>Estas son las tecnologías que manejo para DevOps:</p>
+    <div class="badges">
+      <img
+        src="https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white"
+        alt="Git"
+      />
+      <img
+        src="https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white"
+        alt="GitHub"
+      />
+      <img
+        src="https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white"
+        alt="Docker"
+      />
+      <img
+        src="https://img.shields.io/badge/-Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white"
+        alt="Kubernetes"
+      />
+      <img
+        src="https://img.shields.io/badge/-Ansible-EE0000?style=flat&logo=ansible&logoColor=white"
+        alt="Ansible"
+      />
+      <img
+        src="https://img.shields.io/badge/-Terraform-623CE4?style=flat&logo=terraform&logoColor=white"
+        alt="Terraform"
+      />
+      <img
+        src="https://img.shields.io/badge/-OWASP-222C37?style=flat&logo=owasp&logoColor=white"
+        alt="OWASP"
+      />
+      <img
+        src="https://img.shields.io/badge/-Trivy-22D1E0?style=flat&logo=trivy&logoColor=white"
+        alt="Trivy"
+      />
+      <img
+        src="https://img.shields.io/badge/-Sonarqube-4E9BCD?style=flat&logo=sonarqube&logoColor=white"
+        alt="Sonarqube"
+      />
+      <img
+        src="https://img.shields.io/badge/-Azure%20DevOps-0078D7?style=flat&logo=azure-devops&logoColor=white"
+        alt="Azure DevOps"
+      />
+      <img
+        src="https://img.shields.io/badge/-Azure%20Pipeline-2560E0?style=flat&logo=azure-pipelines&logoColor=white"
+        alt="Azure Pipeline"
+      />
+      <img
+        src="https://img.shields.io/badge/-GitHub%20Actions-2088FF?style=flat&logo=github-actions&logoColor=white"
+        alt="GitHub Actions"
+      />
+      <img
+        src="https://img.shields.io/badge/-Jenkins-D24939?style=flat&logo=jenkins&logoColor=white"
+        alt="Jenkins"
+      />
+      <img
+        src="https://img.shields.io/badge/-AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white"
+        alt="AWS"
+      />
+      <img
+        src="https://img.shields.io/badge/-Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white"
+        alt="Azure"
+      />
+      <img
+        src="https://img.shields.io/badge/-Scrum-47C5FB?style=flat"
+        alt="Scrum"
+      />
+    </div>
+  </div>
+</div>
+<div id="openModalBackend" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <h2>Mi modal</h2>
+    <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p>
+    <div class="badges">
+      <img
+        src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"
+        alt="JavaScript"
+      />
+      <img
+        src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat&logo=typescript&logoColor=white"
+        alt="TypeScript"
+      />
+      <img
+        src="https://img.shields.io/badge/-Java-007396?style=flat&logo=java&logoColor=orange"
+        alt="Java"
+      />
+      <img
+        src="https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white"
+        alt="Node.js"
+      />
+      <img
+        src="https://img.shields.io/badge/-Express.js-000000?style=flat"
+        alt="Express.js"
+      />
+      <img
+        src="https://img.shields.io/badge/-Nest.js-E0234E?style=flat&logo=nestjs&logoColor=white"
+        alt="Nest.js"
+      />
+      <img
+        src="https://img.shields.io/badge/-Spring%20Boot-6DB33F?style=flat&logo=spring&logoColor=white"
+        alt="Spring Boot"
+      />
+    </div>
+  </div>
+</div>
+<div id="openModalFrontend" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <h2>Mi modal</h2>
+    <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p>
+    <div class="badges">
+      <img
+        src="https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black"
+        alt="React"
+      />
+      <img
+        src="https://img.shields.io/badge/-MongoDB-47A248?style=flat&logo=mongodb&logoColor=white"
+        alt="MongoDB"
+      />
+      <img
+        src="https://img.shields.io/badge/-PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white"
+        alt="PostgreSQL"
+      />
+      <img
+        src="https://img.shields.io/badge/-Prisma-2D3748?style=flat&logo=prisma&logoColor=white"
+        alt="Prisma"
+      />
+      <img
+        src="https://img.shields.io/badge/-Mongoose-47A248?style=flat&logo=mongoose&logoColor=white"
+        alt="Mongoose"
+      />
+      <img
+        src="https://img.shields.io/badge/-TypeORM-336791?style=flat&logo=typeorm&logoColor=white"
+        alt="TypeORM"
+      />
+      <img
+        src="https://img.shields.io/badge/-HTML-E34F26?style=flat&logo=html5&logoColor=white"
+        alt="HTML"
+      />
+      <img
+        src="https://img.shields.io/badge/-CSS-1572B6?style=flat&logo=css3&logoColor=white"
+        alt="CSS"
+      />
+      <img
+        src="https://img.shields.io/badge/-Astro-000000?style=flat&logo=astro&logoColor=white"
+        alt="Astro"
+      />
+      <img
+        src="https://img.shields.io/badge/-Tailwind%20CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white"
+        alt="Tailwind CSS"
+      />
+    </div>
+  </div>
+</div>
