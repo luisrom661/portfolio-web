@@ -6,9 +6,7 @@ import { projects, buttons } from "../assets/data";
 export function getStaticPaths() {
   return [
     { params: { id: "devsecops-aws" } },
-    { params: { id: "docker-512" } },
     { params: { id: "terraform-480" } },
-    { params: { id: "kubelet-128" } },
     { params: { id: "kubernetes-480" } },
     { params: { id: "nodejs-480" } },
     { params: { id: "beego" } },
@@ -17,6 +15,11 @@ export function getStaticPaths() {
 }
 
 const card = projects.find((card) => card.image == id);
+if (!card) {
+  // Handle the case when the card is not found
+  console.error(`Card with id '${id}' not found`);
+  // You can redirect to an error page or handle it as appropriate for your application
+}
 ---
 
 <Layout title={`Project | ${id}`}>
