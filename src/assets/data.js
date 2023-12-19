@@ -1,56 +1,56 @@
 export const projects = [
   {
-    title: "Nest Ecommerce",
+    title: "DevSecOps en AWS EC2",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatem ad, exercitationem in beatae voluptate fugit hic error, et quod maxime repellat iusto! Iusto nisi soluta hic minima! Temporibus sequi incidunt vitae dolorum error illo ducimus saepe blanditiis pariatur. Optio amet cum excepturi dignissimos aut tenetur repudiandae ad dolorem, distinctio minima inventore, neque adipisci, facilis autem quis quod nemo. .",
-    image: "jenkins-480",
-    color: "#f3c201",
-    urlProject: "https://github.com/luisrom661/nest-ecommerce",
+      "Automatización completa para una configuración segura de DevSecOps en AWS. Utiliza Ansible y Terraform para desplegar infraestructura, Jenkins para CI/CD, Trivy y OWASP para escaneo de vulnerabilidades, Sonarqube para análisis estático de código. Incluye configuración para Docker y Kubernetes.",
+    image: "devsecops-aws",
+    color: "#e0657c",
+    urlProject: "https://github.com/luisrom661/DevSecOps-config",
+    liveDemo: "",
+  },
+  {
+    title: "Kubernetes en AWS EC2 con Terraform",
+    description:
+      "Este proyecto utiliza Terraform para crear la infraestructura necesaria para dos instancias EC2 en AWS. Una instancia actúa como el nodo maestro de Kubernetes y la otra como el nodo trabajador. Además, se utiliza Ansible para instalar Docker y Kubernetes en ambas máquinas.",
+    image: "kubernetes-480",
+    color: "#146866",
+    urlProject: "https://github.com/luisrom661/aws-ec2-kubernetes",
+    liveDemo: "",
+  },
+  {
+    title: "AWS EC2 con Terraform",
+    description:
+      "Configuración Terraform para AWS EC2, PEM local, Key Pair, Grupo de Seguridad y conexión SSH. Despliega infraestructura de forma eficiente y segura.",
+    image: "terraform-480",
+    color: "#045fb7",
+    urlProject: "https://github.com/luisrom661/terraform-aws-ec2",
     liveDemo: "",
   },
   {
     title: "Node Ecommerce",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatem ad, exercitationem in beatae voluptate fugit hic error, et quod maxime repellat iusto! Iusto nisi soluta hic minima! Temporibus sequi incidunt vitae dolorum error illo ducimus saepe blanditiis pariatur. Optio amet cum excepturi dignissimos aut tenetur repudiandae ad dolorem, distinctio minima inventore, neque adipisci, facilis autem quis quod nemo. .",
-    image: "docker-512",
-    color: "#1629ab",
+      "Aplicación backend de un ecommerce. Utiliza NodeJS, Express, MongoDB y JWT. La aplicación permite a los usuarios registrarse, iniciar sesión, agregar productos. La aplicación también permite a los administradores agregar productos, categorías y subcategorías.",
+    image: "nodejs-480",
+    color: "#146866",
     urlProject: "https://github.com/luisrom661/node-restserver",
     liveDemo: "",
   },
   {
-    title: "Tadhack Backend",
+    title: "BeeGo!",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatem ad, exercitationem in beatae voluptate fugit hic error, et quod maxime repellat iusto! Iusto nisi soluta hic minima! Temporibus sequi incidunt vitae dolorum error illo ducimus saepe blanditiis pariatur. Optio amet cum excepturi dignissimos aut tenetur repudiandae ad dolorem, distinctio minima inventore, neque adipisci, facilis autem quis quod nemo. Delectus sint deserunt repellat ea odio cupiditate repellendus eius saepe ipsa dicta vel nulla ullam sit deleniti accusantium quas dolore, veritatis dolores totam vitae voluptatem placeat fugiat similique alias? Possimus numquam aut illo velit repr.",
-    image: "terraform-480",
-    color: "#045fb7",
-    urlProject: "https://github.com/luisrom661/tadhack-backend",
-    liveDemo: "https://tadhack-backend.zeabur.app/api/users",
-  },
-  {
-    title: "Products API",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatem ad, exercitationem in beatae voluptate fugit hic error, et quod maxime repellat iusto! Iusto nisi soluta hic minima! Temporibus sequi incidunt vitae dolorum error illo ducimus saepe blanditiis pariatur. Optio amet cum excepturi dignissimos aut tenetur repudiandae ad dolorem, distinctio minima inventore, neque adipisci, facilis autem quis quod nemo. Delectus sint deserunt repellat ea odio cupiditate repellendus eius saepe ipsa dicta vel nulla ullam sit deleniti accusantium quas dolore, veritatis dolores totam vitae voluptatem placeat fugiat similique alias? Possimus numquam aut illo velit repr.",
-    image: "deno-480",
-    color: "#146866",
-    urlProject: "https://github.com/luisrom661/spring-java-microservices",
+      "Aplicación fullstack presentada en el TADHack 2023 que permite a los usuarios buscar y conocer sitios turisticos usando una llamada como bot que se comunica con el usuario. La aplicación fue desarrollada en JavaScript, HTML y CSS y para el despliegue de la infraestructura se usó AWS App Runner.",
+    image: "beego",
+    color: "#dbba14",
+    urlProject: "https://github.com/jucemehu2020/TadHack2023",
     liveDemo: "",
   },
   {
-    title: "AWS Kubernetes",
+    title: "App User Backend",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatem ad, exercitationem in beatae voluptate fugit hic error, et quod maxime repellat iusto! Iusto nisi soluta hic minima! Temporibus sequi incidunt vitae dolorum error illo ducimus saepe blanditiis pariatur. Optio amet cum excepturi dignissimos aut tenetur repudiandae ad dolorem, distinctio minima inventore, neque adipisci, facilis autem quis quod nemo. Delectus sint deserunt repellat ea odio cupiditate repellendus eius saepe ipsa dicta vel nulla ullam sit deleniti accusantium quas dolore, veritatis dolores totam vitae voluptatem placeat fugiat similique alias? Possimus numquam aut illo velit repr.",
-    image: "deno-480",
+      "Backend para administrar usuarios de una app. Utiliza NodeJS, Express, MongoDB y JWT para la autenticación de usuarios.",
+    image: "nodejs-app-user-480",
     color: "#146866",
-    urlProject: "https://github.com/luisrom661/spring-java-microservices",
-    liveDemo: "",
-  },
-  {
-    title: "DevSecOps CI/CD",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatem ad, exercitationem in beatae voluptate fugit hic error, et quod maxime repellat iusto! Iusto nisi soluta hic minima! Temporibus sequi incidunt vitae dolorum error illo ducimus saepe blanditiis pariatur. Optio amet cum excepturi dignissimos aut tenetur repudiandae ad dolorem, distinctio minima inventore, neque adipisci, facilis autem quis quod nemo. Delectus sint deserunt repellat ea odio cupiditate repellendus eius saepe ipsa dicta vel nulla ullam sit deleniti accusantium quas dolore, veritatis dolores totam vitae voluptatem placeat fugiat similique alias? Possimus numquam aut illo velit repr.",
-    image: "deno-480",
-    color: "#146866",
-    urlProject: "https://github.com/luisrom661/spring-java-microservices",
+    urlProject: "https://github.com/luisrom661/app-user-backend",
     liveDemo: "",
   },
 ];

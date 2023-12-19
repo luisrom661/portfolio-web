@@ -350,3 +350,7 @@ footer>ul>li>a:hover {
         padding: 0;
     }
 }
+
+.modalDialog h3 {
+    font-weight: bold;
+}
